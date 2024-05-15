@@ -1,0 +1,42 @@
+@startuml
+interface Item{
+int id
+String nom
+int quantite
+String categorie
+}
+class Alimentaire implements Item{
+String numDeLot
+Date dateAchat
+Date dlc
+}
+class Consommable implements Item{
+Date dateAchat
+Boolean estVide
+}
+class Materiel implements Item{
+String description
+}
+class Goodies implements Item{
+float prix
+}
+abstract class Utilisation{
+Date debutUtilisation
+Date finUtilisation
+String remarques
+}
+class Pret extends Utilisation{
+String aQui
+}
+
+Materiel "1"--"*" Utilisation
+
+class Serveur{
+int id
+}
+
+class panier
+
+panier "*"--"1" Serveur
+panier "*"--"*" Item
+@enduml
