@@ -1,1 +1,7 @@
-
+# Compiled source #
+*.aux
+*.fsl
+*.log
+*.out
+*.gz
+*.fdb_latexmk
