@@ -1,6 +1,6 @@
 # Compiled source #
 *.aux
-*.fsl
+*.fls
 *.log
 *.out
 *.gz
