@@ -15,11 +15,33 @@
     urlcolor=black
 }
 
-\title{Cahier des charges : \\ Application de gestion de stock}
+\title{Cahier des charges :\\Application de gestion de stock}
 \author{LOI Léo}
 
 \begin{document}
 \maketitle
+\tableofcontents
+\newpage
 
+\section{Présentation du projet}
+  Le projet devra être présenté sous la forme d’une application pour mobile et ou pour ordinateur permettant de gérer les stocks de l’association Phi-Sciences.
+
+  Le stock est divisé en 3 grandes parties : 
+  \begin{enumerate}
+    \item Les consommables qui contiennent : 
+    \begin{itemize}
+      \item La nourriture et les boissons qui sont identifiées par leur nom, leur numéro de lot et leur date d'achat. Il faudra, pour ces produits, garder une traçabilité de la date d'achat, de péremptionn et potentiellement d'ouverture mais aussi de l'évolution de la quantité de chaque produit dans le temps
+      \item Les produits d’entretien qui sont identifiées par leur nom et leur date d'achat. Il faudra pour ces produits uniquement garder une traçabilité de l'évolution de leur quantité dans le temps
+      \item Les consommables autres (essuie-tout, assiettes en carton, ...) qui sont aussi identifiés par leur nom et leur date d'achat. Il faudra pour ces produits aussi uniquement garder une traçabilité de l'évolution de leur quantité dans le temps
+    \end{itemize}
+    \item Le matériel qui est identitfié par leur nom. Il faudra pour le matériel garder une traçabilité de l'état du matériel et des différentes utilisations ou prêt du matériel
+    \item Les goodies qui sont identifiées par leur nom. Il faudra garder une traçabilité de la quantité de chaque goodies au fil du temps.
+  \end{enumerate}
+
+  Tout membre actif de l’association doit pouvoir modifier le stock afin de signaler la vente ou l’utilisation d’un consommable ou d’un goodies ou encore le prêt ou l’utilisation de matériel. \newline
+  Afin de s’assurer que la gestion du stock est effectuée correctement, un administrateur (membre du Conseil Administratif de l'association) devra comparer chaque semaines le stock réel et celui donné par l’application. \newline
+  Ainsi, il faudra mettre en place un rôle d’administrateur permettant de voir toutes les transactions effectuées mais aussi permettant de modifier le stock et de vérifier son état à différentes étapes (dernière vérification effectuée, ...) \newline
+  Il faudra donc mettre en place un système de connexion et d’identifiants afin de différencier les administrateurs des membres actifs mais aussi pour différencier les membres actifs entre eux afin de savoir, en cas d'erreur, qui a modifié les stocks de quel produit. \newline
+  La connexion mise en place, il faudra quer les membres actifs puissent visualiser les transactions qu'ils ont éffectués afin détécter en amont des fautes de frappes ou toute erreur évidente.
 
 \end{document}
