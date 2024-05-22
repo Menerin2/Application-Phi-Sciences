@@ -47,16 +47,84 @@
 
 \section{Cas d'utilisation }
   \subsection{Inscription}
-    \subsubsection{Description}
-    \subsubsection{Schéma}
+    \begin{description}
+      \item[Description textuelle :] Un administrateur doit pouvoir ajouter un nouveau serveur, pour cela il doit lui assigner un login (NomPrenom) ce qui créera un lien unique auquel le serveur pourra rentrer son mot de passe
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item Chaque serveur doit avoir un login différent
+        \end{itemize}
+    \end{description}
   \subsection{Connexion}
+    \begin{description}
+      \item[Description textuelle :] Chaque personne doit d'abord être identifiées avant de pouvoir accéder à la gestion des stocks
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item Les personnes doivent pouvoir rester connecté entre chaque utilisation
+        \end{itemize}
+    \end{description}
   \subsection{Création d'un produit}
-  \subsection{Ajout d'un produit dans le stock}
-  \subsection{Retrait d'un produit dans le stock}
-  \subsection{Prêt/Urilisation de matériel}
+    \begin{description}
+      \item[Description textuelle :] Si un nouveau produit est proposé à la vente où si du nouveau matériel est acheté, il faut pouvoir créer un nouveau produit dont le stock pourra être modifié
+      \item[Contraintes ]: 
+        \begin{itemize}
+          \item On ne peut pas créer un produit qui existe déjà
+          \item Pour créer un produit, il faut qu'il ai au moins 1 nom et 1 quantité
+        \end{itemize} 
+    \end{description}
+  \subsection{Ajout/Retrait d'un produit dans le stock}
+    \begin{description}
+      \item[Description textuelle :] On doit pouvoir modifier la quantité d'un produit dans le stock
+      \item[Contraintes ]:
+        \begin{itemize}
+          \item Le produit doit avoir été créé dans l'application
+          \item S'il s'agit d'un retrait, on ne peut pas avoir une quantité négative dans le stock
+          \item La modification du stock est mise dans le panier du serveur jusqu'à suppression ou validation
+        \end{itemize}
+    \end{description}
+  \subsection{Supprimer un produit}
+    \begin{description}
+      \item[Description textuelle :] Un produit doit pouvoir être supprimé si il n'est plus proposé à la vente
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item Seul l'administrateur peut supprimer un produit
+          \item Le produit doit avoir été créé dans l'application
+          \item La quantité du produit dans le stock doit être de 0
+        \end{itemize}
+    \end{description}
+  \subsection{Prêt/Utilisation de matériel}
+    \begin{description}
+      \item[Description textuelle :] Un matériel doit pouvoir être utilisé ou emprunté pendant une période donnée
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item Le matériel doit avoir été créé dans l'application
+          \item Le matériel doit avoir un quantité non nulle en stock
+          \item Il faut à la fin de chaque emprunt/utilisation mettre un commentaire concernant les choses notables liées à l'utilisation du matériel
+        \end{itemize}
+    \end{description}
   \subsection{Validation d'un panier}
+    \begin{description}
+      \item[Description textuelle :] Chaque serveur doit pouvoir valider son panier avec toutes les transactions qu'il souhaite éffectuer
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item 
+        \end{itemize}
+    \end{description}
   \subsection{Vider un panier}
+    \begin{description}
+      \item[Description textuelle :] Chaque serveur doit pouvoir supprimer toutes leurs transactions de leur panier
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item 
+        \end{itemize}
+    \end{description}
   \subsection{Valider une transaction}
+    \begin{description}
+      \item[Description textuelle :] Un administrateur doit pouvoir, si le stock de l'application ne correspond pas au stock réel, vérifier touts les transactions éffectués et par qui depuis sa dernière validation
+      \item[Contraintes ]:  
+        \begin{itemize}
+          \item 
+        \end{itemize}
+    \end{description}
 
 
 \end{document}
