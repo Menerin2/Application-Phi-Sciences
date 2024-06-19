@@ -35,8 +35,19 @@ class Serveur{
 int id
 }
 
-class panier
+class Panier
 
-panier "*"--"1" Serveur
-panier "*"--"*" Item
+class Historique
+
+class Categories{
+List String
+getInstance()
+addCategorie()
+rmvCategorie()
+}
+
+Panier "*"--right"1" Serveur
+Panier "*"--"*" Item
+Historique "*"--"1" Panier
+Historique "1"--"1" Serveur
 @enduml

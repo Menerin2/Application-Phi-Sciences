@@ -1,0 +1,85 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{AndroidStudio}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Android Studio}
+      \verb{urlraw}
+      \verb https://developer.android.com/studio?hl=fr
+      \endverb
+      \verb{url}
+      \verb https://developer.android.com/studio?hl=fr
+      \endverb
+    \endentry
+    \entry{Java}{online}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{title}{Java}
+      \verb{urlraw}
+      \verb https://www.java.com/fr/
+      \endverb
+      \verb{url}
+      \verb https://www.java.com/fr/
+      \endverb
+    \endentry
+    \entry{Looping}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Looping}
+      \verb{urlraw}
+      \verb https://www.looping-mcd.fr/
+      \endverb
+      \verb{url}
+      \verb https://www.looping-mcd.fr/
+      \endverb
+    \endentry
+    \entry{Plant}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Plant UML}
+      \verb{urlraw}
+      \verb https://plantuml.com/fr/
+      \endverb
+      \verb{url}
+      \verb https://plantuml.com/fr/
+      \endverb
+    \endentry
+    \entry{Sql}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{SQLite}
+      \verb{urlraw}
+      \verb https://sqlite.org/
+      \endverb
+      \verb{url}
+      \verb https://sqlite.org/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
